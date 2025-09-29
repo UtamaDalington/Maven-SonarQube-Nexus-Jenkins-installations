@@ -9,7 +9,7 @@ This script installs Apache HTTP Server, WordPress, and MySQL Database using Doc
     ```
     docker --version
     ```
-3. Run the Container Application.
+3. Run the Container Application to install Apache HTTP Server.
 
     ```
     docker run --name apache-webserver -p 8000:80 -d httpd:latest
@@ -19,7 +19,7 @@ This script installs Apache HTTP Server, WordPress, and MySQL Database using Doc
    ```
    docker network create wp-net
    ```
-5. Deploy the WordPress Application.
+5. Run the Container Application to install WordPress.
 
     ```
     docker run -d \
@@ -32,7 +32,7 @@ This script installs Apache HTTP Server, WordPress, and MySQL Database using Doc
     -e WORDPRESS_DB_NAME=wordpress \
     wordpress:latest
     ```
-6. Deploy Database for the WordPress Application.
+6. Run the Container Application to install MySQL Database.
 
     ```
     docker run -d \
@@ -44,3 +44,8 @@ This script installs Apache HTTP Server, WordPress, and MySQL Database using Doc
     -e MYSQL_PASSWORD=wppass \
     mysql:5.7
     ```
+7. See all containers (including stopped/hidden containers).
+
+   ```
+   docker ps -a
+   ```    
