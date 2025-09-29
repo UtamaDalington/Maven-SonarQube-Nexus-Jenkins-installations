@@ -10,7 +10,6 @@ This script installs Apache HTTP Server, WordPress, and MySQL Database using Doc
     docker --version
     ```
 3. Run the Container Application.
-# docker run --name PERSONAL_CONTAINER_NAME -p HOST_PORT:CONTAINER_PORT -d IMAGE_NAME
 
     ```
     docker run --name apache-webserver -p 8000:80 -d httpd:latest
