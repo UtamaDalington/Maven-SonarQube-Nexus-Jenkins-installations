@@ -5,7 +5,7 @@ apt-get update -y
 apt-get upgrade -y
 
 # Install Java 11 (LTS)
-sudo apt-get install -y openjdk-11-jdk java-comm
+sudo apt-get install -y openjdk-11-jdk
 
 # Install Apache Maven
 apt-get install -y maven 
